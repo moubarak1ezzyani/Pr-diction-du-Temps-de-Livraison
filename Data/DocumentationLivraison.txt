@@ -1,0 +1,68 @@
+Brief N° : 2
+Nom Complet : Prédiction du Temps de Livraison – Projet Data Science
+
+
+Période :
+	De : 13 Oct 2025
+	au : 17 Oct 2025
+
+Projet & Composants :
+
+--> Analyse et Exploration des Données :
+		- EDA	(info();	head();	shape();	duplicated();	describe();	values_counts())
+		- Heatmap de corrélation des variables numériques
+		- Countplots pour visualiser la distribution des variables catégorielles
+		- Boxplots pour analyser la relation entre la cible et les variables catégorielles (ex : trafic vs temps de livraison)
+        - Analyse de la distribution de la variable cible.
+
+
+    Ces visualisations serviront à identifier les variables les plus explicatives avant la modélisation.
+        - Prétraitement (StandardScaler pour numérique, OneHotEncoder pour catégoriel)
+        - Sélection de features (SelectKBest)
+        - Utiliser le test statistique f_regression
+
+--> Modélisation avec GridSearchCV (obligatoire) :
+		- Choisir deux modèles de régression (RandomForestRegressor, SVR)
+		- Définir un grid d’hyperparamètres pour chaque modèle
+		- Utiliser GridSearchCV avec validation croisée pour trouver la meilleure combinaison selon la métrique MAE (Mean Absolute Error)
+		- Évaluer le modèle sélectionné avec MAE et R² sur le jeu de test
+        - Justifier le choix du modèle final en fonction de ses performances
+
+--> Bonus : Pipeline sklearn :
+
+    Créer un pipeline sklearn intégrant :
+
+		- Prétraitement (StandardScaler pour numérique, OneHotEncoder pour catégoriel)
+		- Sélection de features (SelectKBest)
+		- Modélisation (un des modèles testés dans GridSearchCV)
+
+Pipeline permet d’automatiser le flux de traitement et d’éviter les fuites de données
+
+
+--> Tests Automatisés :
+
+		- Vérification du format et des dimensions des données
+		- Vérification que la MAE maximale ne dépasse pas un seuil défini
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

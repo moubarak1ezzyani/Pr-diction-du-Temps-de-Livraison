@@ -209,7 +209,7 @@ __marimo__/
 # data file
 ./Data/DataSetFile_Livraison.csv
 ./Data/DocumentationLivraison.txt
-./Data/
+Data/
 
 # venv
 LivraisonEnv/
